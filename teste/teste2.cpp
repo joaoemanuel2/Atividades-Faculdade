@@ -1,11 +1,19 @@
 #include <iostream>
 using namespace std;
+
 int main()
 {
 
-    string nomes[6] = {"Tereza", "Jonas", "Beatriz", "Jamal", "Alice", "Renzo"};
+   int base, expoente;
 
-    cout << nomes[5] << endl;
+   cin >> base;
+   cin >> expoente;
 
-    return 0;
+   for (int i = 1; i < expoente; i++)
+   {
+      base *= i;
+   }
+   cout << base;
+
+   return 0;
 }

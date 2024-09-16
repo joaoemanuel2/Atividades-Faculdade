@@ -1,25 +1,12 @@
 #include <iostream>
-#include <vector>
+#include "menu.cpp"
+#include "teste2.cpp"
 using namespace std;
 
 int main()
 {
-
-    int n;
-    cin >> n;
-
-    vector<int> s(n);
-    for (int i = 0; i < n; ++i)
-    {
-        cin >> s[i];
-    }
-    for (int i = 0; i < n; ++i)
-    {
-        if (s[i] < 0)
-        {
-            cout << " " << s[i];
-        }
-    }
-
+    menu();
+    boa_vindas();
+    cout << "Encerrando..\n";
     return 0;
 }
