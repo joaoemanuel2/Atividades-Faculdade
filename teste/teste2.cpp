@@ -1,19 +1,25 @@
 #include <iostream>
 using namespace std;
 
+float doub()
+{
+
+   float num, dobro;
+
+   cout << "Digite um numero: ";
+   cin >> num;
+
+   dobro = 2 * num;
+
+   return dobro;
+}
 int main()
 {
 
-   int base, expoente;
+   float res;
+   res = doub();
 
-   cin >> base;
-   cin >> expoente;
-
-   for (int i = 1; i < expoente; i++)
-   {
-      base *= i;
-   }
-   cout << base;
+   cout << "Dobro: " << res << endl;
 
    return 0;
 }

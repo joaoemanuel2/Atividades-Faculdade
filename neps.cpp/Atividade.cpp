@@ -4,14 +4,37 @@ using namespace std;
 int main()
 {
 
-    int n, soma = 1;
+    int n, p, q, r;
+    char c;
 
     cin >> n;
+    cin >> p >> c >> q;
 
-    for (int i = 1; i <= n; ++i)
+    if (c == '+')
     {
-        soma *= i;
+        r = p + q;
+        if (r <= n)
+        {
+            cout << "OK\n";
+        }
+        else
+        {
+            cout << "OVERFLOW";
+        }
     }
-    cout << soma;
+    else if (c == '*')
+    {
+
+        r = p * q;
+        if (r <= n)
+        {
+            cout << "OK\n";
+        }
+        else
+        {
+            cout << "OVERFLOW";
+        }
+    }
+
     return 0;
 }
